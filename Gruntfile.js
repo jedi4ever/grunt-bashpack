@@ -58,20 +58,8 @@ module.exports = function(grunt) {
       test: {
         options: {
           reporter: 'list',
-          require: 'coverage/blanket'
         },
         src: ['test/**/*.js']
-      },
-      coverage: {
-        options: {
-          reporter: 'html-cov',
-          // use the quiet flag to suppress the mocha console output
-          quiet: true
-        },
-        src: ['test/**/*.js'],
-        // specify a destination file to capture the mocha
-        // output (the quiet option does not suppress this)
-        dest: 'coverage.html'
       }
     },
 
@@ -92,17 +80,6 @@ module.exports = function(grunt) {
         nospawn: false
       }
     },
-    docco: {
-      docs: {
-        src: ['lib/**/*.js'],
-        options: {
-          output: 'docs/annotated-source'
-        }
-      }
-    },
-    htmllint: {
-        all: ["public/index.html"]
-    }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -110,8 +87,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-release');
-  grunt.loadNpmTasks('grunt-docco2');
-  grunt.loadNpmTasks('grunt-html');
 
   grunt.registerTask('test', ['jshint','mochaTest']);
 
