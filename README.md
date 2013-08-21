@@ -17,7 +17,7 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('bashpack');
 ```
 
-## The "baspack" task
+## The "bashpack" task
 
 ### Overview
 In your project's Gruntfile, add a section named `bashpack` to the data object passed into `grunt.initConfig()`.
