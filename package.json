@@ -1,0 +1,47 @@
+{
+  "name": "grunt-bashpack",
+  "description": "Grunt plugin to create bashpacks",
+  "version": "0.0.1",
+  "homepage": "https://github.com/patrick/grunt-bashpack",
+  "author": {
+    "name": "Patrick Debois",
+    "email": "Patrick.Debois@jedi.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/patrick/grunt-bashpack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/patrick/grunt-bashpack/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/patrick/grunt-bashpack/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "bashpack" : ">=0.0.4"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-release": "~0.3.5",
+    "grunt-mocha-test": "~0.5.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "keywords": [
+    "gruntplugin",
+    "bashpack"
+  ]
+}
