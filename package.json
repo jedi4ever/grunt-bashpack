@@ -1,7 +1,7 @@
 {
   "name": "grunt-bashpack",
   "description": "Grunt plugin to create bashpacks",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "homepage": "https://github.com/patrick/grunt-bashpack",
   "author": {
     "name": "Patrick Debois",
@@ -28,7 +28,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "bashpack": ">=0.0.13"
+    "bashpack": ">=0.0.16"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.6.0",
